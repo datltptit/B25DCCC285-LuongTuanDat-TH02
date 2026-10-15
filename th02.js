@@ -97,8 +97,7 @@ function App() {
       </header>
 
       <main className="main-layout">
-        <aside className="sidebar">
-          <h2>Danh sách thành phố</h2>
+        <div className="city-bar">
           <ul className="city-list">
             {CITIES.map((city) => (
               <li key={city.id}>
@@ -113,7 +112,7 @@ function App() {
               </li>
             ))}
           </ul>
-        </aside>
+        </div>
 
         <section className="content-area">
           {!selectedCity && (
